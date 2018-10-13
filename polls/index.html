@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+
+<html>
+    <head>
+        <title>Django blog</title>
+        <link rel="stylesheet" href="{% static 'css/polls.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Polls App</a></h1>
+        </div>
+			{% if latest_question_list %}
+			           <ul>
+			    {% for question in latest_question_list %}
+			           <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
+			    {% endfor %}
+			       </ul>
+			{% else %}
+			           <p>No polls are available.</p>
+			{% endif %}
+
+			{% load staticfiles %}
+    </body>
+</html>
