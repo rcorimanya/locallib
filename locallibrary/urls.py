@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 urlpatterns = [
     #url(r'^catalog/', include('catalog.urls')), #this line added
-    url(r'^polls/', include('polls.urls')), #this line added
+    #url(r'^polls/', include('polls.urls')), #this line added
     url(r'^admin/', admin.site.urls),
 ]
 
@@ -38,6 +38,9 @@ urlpatterns += [
     path('catalog/', include('catalog.urls')),
 ]
 
+urlpatterns += [
+    path('polls/', include('polls.urls')),
+]
 
 # Use static() to add url mapping to serve static files during development (only)
 from django.conf import settings
@@ -53,7 +56,9 @@ urlpatterns += [
     path('', RedirectView.as_view(url='/catalog/', permanent=True)),
 ]
 
-
+urlpatterns += [
+    path('', RedirectView.as_view(url='/polls/', permanent=True)),
+]
 
 #Add Django site authentication urls (for login, logout, password management)
 urlpatterns += [

@@ -16,6 +16,48 @@
 
     {% else %}
       <p>There are no books in the library.</p>
+      <div id="cuerpo">
+        <div id="content">
+          <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+                <div class="row">
+                  <div class="titulo-notifica">
+                    <div class="container-fluid text-left">
+                        <span class="texto-blanco-titulo"> LIBROS DE - </span>
+                        <span class="texto-naranja-titulo"> CIENCIA FICCCIÖN</span>
+                    </div>                  
+                  </div>
+                </div>
+            </div>  
+          </div>
+          <div class="separa-10"></div>
+          <div class="row">
+            <form data-toggle="validator" role="form">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="control-label">Localidad:</label>
+                  <label class="select">
+                    <select id="cmbLocalidad" name="cmbLocalidad">
+                      <option value="01">Proyecto Lima Norte</option>
+                      <option value="01">Proyecto Lima Sur</option>
+                      <option value="02">Proyecto Lima Este</option>
+                      <option value="03">Proyecto Lima Oeste</option>
+                    </select>  
+                  </label>                
+                </div>
+              </div> 
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="control-label">Referencia Cliente</label>
+                  <label class="input">
+                    <input type="text" name="txtRefeenciaCliente" placeholder="ingrese referencia">
+                  </label>                
+                </div>
+              </div>              
+            </form>
+
+          </div>
+    </div>
     {% endif %}       
 {% endblock %}
 
