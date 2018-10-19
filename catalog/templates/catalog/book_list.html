@@ -58,6 +58,430 @@
 
           </div>
     </div>
+
+<div id="cuerpo">
+      <div id="content">
+        <div class="row">
+          <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+            <div class="row">
+              <div class="container-fluid text-left">
+                <span class="h1-resultados page-title">REGISTRO DE PRE - ACTA <i class="text-danger"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="well">
+              <div class="row">
+                <div class="span12">
+                  <div class="titulo-notifica">
+                    <div class="container-fluid">
+                      <span class="texto-blanco-titulo">Cliente : </span>
+                      <span class="texto-naranja-titulo">COMPANIA MINERA ANTAMINA S.A</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="separa-12"></div>
+
+              <div class="row">
+                    <ul id="myTab1" class="nav nav-tabs bordered">
+                      <li class="active">
+                        <a href="#scotia_producto_contenedor_s1" data-toggle="tab">Datos Generales</a>
+                      </li>
+                    </ul>
+                    <div id="scotia_producto_contenedor" class="tab-content padding-10">
+                      <div class="tab-pane fade active in" id="scotia_producto_contenedor_s1">
+
+                        <div class="row">
+                          <div class="col-sm-12">
+                          <form data-toggle="validator" role="form">
+                            <div class="form-group">
+                              <label for="inputName" class="control-label">Name</label>
+                              <input type="text" class="form-control" id="inputName" placeholder="ingrese nombre" required>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="inputEmail" class="control-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="error" required>
+                              <div class="help-block with-errors"></div>
+                            </div>
+
+
+
+                          <div class="form-group">
+                            <button type="submit" id="btnxx" class="btn btn-primary">Submit</button>
+                          </div>
+                        </form>
+                        </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <form data-toggle="validator" role="form">
+                              <div class="row">
+                                <div class="col-md-8">
+                                  <div class="form-group">
+                                  <label class="control-label">Localidad</label>
+                                  <label class="select">
+                                    <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                      <option value="013">PROYECTO TIOCIANATO</option>
+                                      <option value="001">FISCAL</option>
+                                      <option value="004">LABORATORIO QUIMICO</option>
+                                      <option value="005">DEPARTAMENTO DE MEDIO AMBIENTE – PUERTO</option>
+                                      <option value="006">DEPARTAMENTO DE MEDIO AMBIENTE – MINA</option>
+                                      <option value="007">LABORATORIO METALURGICO</option>
+                                      <option value="008">YANACANCHA</option>
+                                      <option value="009">P84374 - MINAA</option>
+                                      <option value="010">CALIDAD DE AIRE - MINA</option>
+                                      <option value="011">CALIDAD DE AIRE - PUERTO HUARMEY</option>
+                                      <option value="012">PLANIFICACION Y DESARROLLO</option>
+
+                                      <option value="014">PRINCIPAL</option>
+                                      <option value="015">PROYECTO SGS - CANADA</option>
+                                      <option value="016">DOCUMENTOS</option>
+                                      <option value="017">PRINCIPAL</option>
+                                      <option value="018">YANACANCHA - MONITOREO</option>
+
+                                    </select> <i></i>
+                                  </label>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="form-group">
+                                  <label class="control-label">Referencia del Cliente</label>
+                                  <label class="input">
+                                    <input type="text" id="scotia_nro_productos_desde" class="form-control" placeholder="" required>
+                                  </label>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div>
+                              <div class="row">
+                                <div class="col-sm-8">
+                                    <label class="control-label">Presentación</label>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">SELECCIONE</option>
+                                        <option value="MTZAGU">AGUA</option>
+                                        <option value="MTZAIR">AIRE</option>
+                                        <option value="MTZAIREINT">AIRE EN INTERIORES</option>
+                                        <option value="MTZGAS">GAS</option>
+                                        <option value="MTZLODO">LODOS</option>
+                                        <option value="MTZQAIR">CALIDAD DE AIRE EN AMBIENTE DE TRABAJO</option>
+                                        <option value="MTZRLV">RELAVE</option>
+                                        <option value="MTZRUI">RUIDO</option>
+                                        <option value="MTZSED">SEDIMENTOS</option>
+                                        <option value="MTZSUE">SUELO</option>
+                                        <option value="MTZVIB">VIBRACION</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </div>
+                                <div class="col-sm-4">
+                                  <label class="control-label">Fecha de Muestreo</label>
+                                  <label class="input">
+                                    <input type="Date" id="dtFecha" name="dtFecha"  placeholder="">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div>
+                                <div class="row">
+                                  <div class="col-sm-8">
+                                    <label class="input">
+                                      <input type="text" id="txtFile" style="width:600px" name="txtFile"  placeholder="seleccione archivo excel">
+                                    </label>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <img src="img/excelIco.jpg" width="35" height="28" />
+
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                            </div>
+
+                        </div>
+                      </div>
+              </div>
+              <div class="separa-12"></div>
+              <div class="row">
+                    <ul id="myTab1" class="nav nav-tabs bordered">
+                      <li class="active">
+                        <a href="#scotia_producto_contenedor_s1" data-toggle="tab">Estación / Análisis</a>
+                      </li>
+
+                      <li>
+                        <input type="checkbox" id="scotia_tenencia" name="scotia_tenencia"><strong>Generales 1</strong>
+                        <label><input type="checkbox" value="">Option 1</label>
+                      </li>
+                      <li class="active">
+                        <label><input type="checkbox" id="scotia_tenencia" name="scotia_tenencia"><strong>Generales </strong></label>
+                      </li>
+                      <li class="active">
+                        <label><input type="checkbox" id="scotia_tenencia" name="scotia_tenencia"><strong>Paquetes Generales Puertos</strong></label>
+                      </li>
+                    </ul>
+
+                    <div id="scotia_producto_contenedor" class="tab-content padding-10">
+                      <div class="tab-pane fade active in" id="scotia_producto_contenedor_s1">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <table class="table table-striped table-hover">
+                              <thead>
+                                <tr>
+                                  <th>Estación</th>
+                                  <th>Clase</th>
+                                  <th>Frecuencia</th>
+                                  <th>Ag PM10 HV ICP MS</th>
+                                  <th>As PM10 HV ICP MS </th>
+                                  <th>Ba PM10 HV ICP MS </th>
+                                  <th>Bi PTS HV ICP MS</th>
+                                  <th>Cr PM2.5 HV ICP MS</th>
+                                  <th>Dióxido de Nitrógeno</th>
+                                  <th>Hg PM2.5 HV ICP MS</th>
+                                  <th>Na PM2.5 HV ICP MS </th>
+                                  <th>Pb PTS HV ICP MS </th>
+                                  <th>Acción</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>I-P</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Seleccone</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>I-UF</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Seleccione</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>S-UF</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>I-MMF</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>S-MMF</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>P-OR</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>B-OR</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                  <td>B-EDR</td>
+                                  <td>Clase</td>
+                                  <td>
+                                    <label class="select">
+                                      <select id="scotia_ofertasaprobadas_opciones" name="scotia_ofertasaprobadas_opciones">
+                                        <option value="">Todos</option>
+                                        <option value="1">Frecuencia 1</option>
+                                        <option value="0">Frecuencia 2</option>
+                                        <option value="0">Frecuencia 3</option>
+                                        <option value="0">Frecuencia N</option>
+                                      </select> <i></i>
+                                    </label>
+                                  </td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><input type="checkbox" id="ch1" name="chk1"></td>
+                                  <td><a class="eliminar" href="#"><i class="glyphicon glyphicon-trash"></i></a></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="smart-form">
+                            <div class="col-sm-12 text-left">
+                              <button type="submit" class="btn btn-sm btn-sm btn-primary">
+                                Guardar
+                              </button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="separa-12"></div>
+            </div>
+            <div class="separa-12"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {% endif %}       
 {% endblock %}
 
